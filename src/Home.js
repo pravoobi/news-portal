@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import './Home.css';
 
 function Home({news, publishers}){
-    console.log("pub", publishers);
     if(publishers.length === 0) return null;
 
     return (

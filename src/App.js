@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Routes, Route } from "react-router-dom";
 import Home from './Home';
 import Publisher from './Publisher';
-import { HiHome } from  "react-icons/hi";
 import './App.css';
 
 function App() {
@@ -26,9 +25,7 @@ function App() {
     });
   }, []);
 
-  function handleClick() {
-    window.history.pushState({}, undefined, "/");
-  }
+  
   function searchNews(e){
     setSearchTerm(e.target.value);
     const searchNews = news.find(item => item.TITLE === e.target.value);
@@ -38,7 +35,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <HiHome onClick={handleClick}/> */}
         <h1>News Portal</h1>
         <div className="search">
           <input type="input" placeholder="Search news" value = {searchTerm} onChange={searchNews}/>
