@@ -1,0 +1,22 @@
+.publishers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.publishersButton{
+    margin: .25rem;
+    height: 2.5rem;
+    color: #000;
+    font-weight: 500;
+    width: 200px;
+    border: 1px solid #000;
+    padding-top: 1rem;;
+}
+.publishersButton:hover{
+    color: #ffac2e;
+    background-color: #ddd;
+    font-weight: 900;
+    font-size: 1.2em;
+    height: 3.5rem;
+    width: 240px;
+}
